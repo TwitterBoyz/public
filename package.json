@@ -1,0 +1,16 @@
+{
+  "name": "expressfun",
+  "version": "1.0.0",
+  "description": "This is an attempt to play with express servers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Do Nguyen, Ty Brenner, Adam Taitano",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {}
+}
