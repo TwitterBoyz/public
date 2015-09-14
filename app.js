@@ -1,11 +1,13 @@
 
 var express        =         require("express");
 var bodyParser     =         require("body-parser");
+var cookieParser   =         require("cookie-parser");
 var app            =         express();
 var users = [];
 var passwords = [];
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 
 app.get('/',function(req,res){
   res.sendfile("html/index.html");
@@ -21,6 +23,14 @@ app.get('/tweet',function(req,res){
 
 app.get('/main',function(req,res){
   res.sendfile("html/main.html");
+});
+
+app.get('/signup',function(req,res){
+  res.sendfile("html/signup.html");
+});
+
+app.get('/test',function(req,res){
+  res.sendfile("public/test.js");
 });
 
 app.post('/login',function(req,res){
