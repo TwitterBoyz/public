@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css">
     <title>Tweet Page</title>
   </head>
   <body>
@@ -9,13 +10,12 @@
       <h1>Write Your Tweet!</h1>
     </div>
     <div class="Message">
-      <form class="message" action="/main" method="post">
-        <input type="formfield" name="name" value="">
-      </form>
-    </div>
-    <div class="submit">
+      <form class="message" method="post" action="/main">
+        <input type="formfield" name="name" id= "message" value="">
+
       <h3>Submit your tweet:</h3>
-      <input type="button" id="submit" onclick="location.href='/main';" value="Submit">
+      <input type="button" id="submit" onclick="makeTweet();" value="Submit">
+        </form>
     </div>
   </body>
 </html>
