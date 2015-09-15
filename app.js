@@ -23,6 +23,8 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use("/css", express.static(__dirname + '/css'));
+app.use("/stylesheets", express.static(__dirname + '/stylesheets'));
+app.use("/javascripts", express.static(__dirname + '/javascripts'));
 
 
 app.get('/',function(req,res){

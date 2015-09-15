@@ -2,8 +2,14 @@
 <html>
   <head>
     <title>Test Twitter Login</title>
-    <link rel="stylesheet" type="text/css" href="/css/mystyle.css">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/mystyle.css"> -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
     <!-- <script>
       $(document).ready(function(){
@@ -17,26 +23,27 @@
   </head>
   <body>
     <div class="login">
+      <header>
       <h1>Log-In</h1>
     </div>
+  </header>
       <div class="userpass">
-        <!-- <form class="something" action="/main" method="post">
-            Username:<input type="text" id="user" value = "" size="40"><br>
-            Password:<input type="password" id="password" value = "" size="40">
-          <input type="submit" id="submit" value="Sign-In">
-        </form> -->
+        <section>
         <form class="signup" action="/main" method="post">
           Username: <input type="text" name="username" value=""><br>
           Password: <input type="password" name="password" value="">
-          <input type="submit" id ="submit" value="Sign-Up">
+          <input type="submit" id ="submit" value="Sign-In">
         </form>
-      </div>
+
+
       <br>
       <div class="signUp">
+
           Not a member?
 
           <input type="button" id="submit" onclick="location.href='/signup/';" value="Sign-Up">
-      </div>
+        </section>
+
           <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
 </html>
