@@ -41,7 +41,6 @@ app.get('/main', function(req,res){
   res.sendfile("html/main.html");
 });
 
-<<<<<<< HEAD
 // app.get('/main',function(req,res){
 //   var user_name=req.body.user;
 //   var password=req.body.password;
