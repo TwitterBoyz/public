@@ -109,24 +109,7 @@ app.post('/signup', function(req,res){
       res.redirect("/");
     }
   console.log(app.locals.users);
-=======
-app.get('/signup',function(req,res){
-  res.sendfile("html/signup.html");
-});
 
-app.get('/test',function(req,res){
-  res.sendfile("public/test.js");
-});
-
-app.post('/login',function(req,res){
-  var user_name=req.body.user;
-  var password=req.body.password;
-  users.push(user_name);
-  passwords.push(password);
-  console.log("User name = "+user_name+", password is "+password);
-  res.end("yes");
-  console.log(users, passwords);
->>>>>>> 66fd7ab96e29a851e6c614cf1f15933644613c3e
 });
 
 // app.post('/signup', function(req,res){
