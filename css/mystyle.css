@@ -1,8 +1,16 @@
-body {
-    background-color: lightblue;
+.tweet {
+  float: left;
+  width: 33%
 }
 
-h1 {
-    color: purple;
-    margin-left: 20px;
+.viewprofile {
+  float: left;
+  width: 33%
+
+}
+
+.incognito {
+  float: right;
+  width: 33%
+
 }
